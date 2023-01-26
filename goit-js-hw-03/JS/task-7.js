@@ -57,10 +57,9 @@ const account = {
       : successWithDraw();
 
     function successWithDraw() {
+      let { transactions, createTransaction } = account;
       account.balance -= amount;
-      account.transactions.push(
-        account.createTransaction(amount, Transaction.WITHDRAW)
-      );
+      transactions.push(createTransaction(amount, Transaction.WITHDRAW));
     }
   },
 
@@ -88,19 +87,25 @@ const account = {
    */
   getTransactionTotal(type) {
     let amountByType = 0;
-    for (const transaction of this.transactions) {
-      if (transaction.type === type) {
-        amountByType += transaction.amount;
+    for (const { type: currentType, amount } of this.transactions) {
+      if (currentType === type) {
+        amountByType += amount;
       }
     }
     return amountByType;
   },
 };
-console.log(account.deposit(300));
-console.log(account.withdraw(100));
-console.log(account.deposit(600));
-console.log(account.withdraw(400));
+account.deposit(300);
+account.withdraw(100);
+account.deposit(600);
+account.withdraw(400);
 console.log(account);
-//console.log(account.getBalance());
-console.log(account.getTransactionDetails(account.transactions[0].id));
-console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+console.log(`Current balance : ${account.getBalance()}`);
+console.log(
+  "Get transaction by id ",
+  account.getTransactionDetails(account.transactions[0].id)
+);
+console.log(
+  `Sum of ${Transaction.WITHDRAW} transaction :` +
+    account.getTransactionTotal(Transaction.WITHDRAW)
+);
