@@ -1,0 +1,10 @@
+body {
+    margin: 34px;
+    border: 6px goldenrod dotted;
+  }
+
+  .new-class{
+    opacity: 0.5;
+    color: rgb(2, 84, 57);
+    text-transform: uppercase;
+  }
