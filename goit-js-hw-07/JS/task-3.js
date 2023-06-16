@@ -15,15 +15,25 @@ const images = [
 
 const galleryList = document.querySelector("#gallery");
 
-const imageElements = images.map((image) => {
-  const createImage = document.createElement("img");
-  createImage.src = image.url;
-  createImage.alt = image.alt;
-  return createImage;
+const imageElements = images.map(({ url, alt }) => {
+  return `<img src=${url} alt=${alt} >`;
 });
+galleryList.classList.add("gallary__block");
 console.log(imageElements);
 
-galleryList.append(...imageElements);
+const makeImageElements = imageElements.join("");
+console.log(makeImageElements);
+galleryList.insertAdjacentHTML("beforeend", makeImageElements);
 
-galleryList.classList.add("gallary__block");
-console.log(galleryList.classList);
+// const imageElements = images.map((image) => {
+//   const createImage = document.createElement("img");
+//   createImage.src = image.url;
+//   createImage.alt = image.alt;
+//   return createImage;
+// });
+// console.log(imageElements);
+
+// galleryList.append(...imageElements);
+
+// galleryList.classList.add("gallary__block");
+// console.log(galleryList.classList);
