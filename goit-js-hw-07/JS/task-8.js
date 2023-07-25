@@ -31,4 +31,10 @@ const addBlocks = () => {
   boxes.append(...boxArray);
 };
 
+const deleteBlocks = () => {
+  boxes.innerHTML = ``;
+  boxArray.length = 0;
+};
+
 renderButton.addEventListener("click", addBlocks);
+destroyButton.addEventListener("click", deleteBlocks);
