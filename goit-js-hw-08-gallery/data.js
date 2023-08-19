@@ -62,4 +62,67 @@ export const galleryItems = [
       "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     description: "Lighthouse Coast Sea",
   },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2023/08/08/17/20/yosemite-8177850__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2023/08/08/17/20/yosemite-8177850_1280.jpg",
+    description: "Yosemite, Sunset",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2023/07/27/19/57/castle-8153987__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2023/07/27/19/57/castle-8153987_1280.jpg",
+    description: "Castle",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_1280.jpg",
+    description: "Avenue trees",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2018/01/21/01/46/architecture-3095716_1280.jpg",
+    description: "Neuschwanstein Castle",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_1280.jpg",
+    description: "Mountain landscape",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432_1280.jpg",
+    description: "Forest",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2018/06/09/17/25/trees-3464777_1280.jpg",
+    description: "Trees Nature",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2015/05/29/17/39/noble-789501__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2015/05/29/17/39/noble-789501_1280.jpg",
+    description: "Hofburg Imperial Palace",
+  },
+  {
+    preview:
+      "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270__340.jpg",
+    original:
+      "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_1280.jpg",
+    description: "Sunset, Poppies, Field",
+  },
 ];

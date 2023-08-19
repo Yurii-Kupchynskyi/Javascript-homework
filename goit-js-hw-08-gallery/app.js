@@ -48,6 +48,7 @@ function createGallaryCardMarkup(galleryItems) {
           
         >
           <img
+            loading ="lazy"
             class="gallery__image"
             src="${preview}"
             data-source="${original}"
